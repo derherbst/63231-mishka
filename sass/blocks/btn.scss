@@ -1,0 +1,6 @@
+.btn {
+  @include font(17px, 24px, 700);
+  text-decoration: none;
+  color: $font-color-grey;
+  border: $grey-border;
+}

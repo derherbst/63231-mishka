@@ -1,0 +1,8 @@
+.body-wrapper {
+  max-width: $mobile-width;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  
+  @include font(15px, 24px, 400);
+}

@@ -1,0 +1,9 @@
+.about__title {
+  color: $font-color-main;
+  @include font(25px, 30px, 700);
+}
+
+.about__item {
+  color: $font-color-main;
+  @include font(17px, 20px, 700);
+}

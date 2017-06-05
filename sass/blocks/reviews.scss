@@ -1,0 +1,18 @@
+.reviews__title {
+  color: $font-color-main;
+  @include font(25px, 30px, 700);
+}
+
+.reviews__text {
+  color: $font-color-grey;
+  @include font(17px, 30px, 400);
+}
+
+.reviews__author-name {
+  color: $font-color-main;
+  @include font(17px, 24px, 700);
+}
+
+.reviews__auhor‐nick {
+  font-style: normal;
+}

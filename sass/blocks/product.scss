@@ -1,0 +1,27 @@
+.product {
+  color: $font-color-grey;
+}
+
+.product__name {
+  color: $font-color-main;
+  @include font(25px, 30px, 700);
+}
+
+.product__hot-lot {
+  color: $font-color-aqua;
+  @include font(17px, 20px, 400);
+}
+
+.product__text {
+  @include font(15px, 20px, 400);
+}
+
+.product__price {
+  @include font(17px, 24px, 700);
+}
+
+.product__purchase {
+  color: $font-color-grey;
+  background: $white-bg;
+  border: $grey-border;
+}

@@ -1,0 +1,9 @@
+.page-header {
+  min-height: 79px;
+  max-height: 395px;
+}
+
+.page-header__wrapper {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  @include font(17px, 24px, 700);
+}
