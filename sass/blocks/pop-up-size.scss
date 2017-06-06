@@ -1,3 +1,13 @@
+.pop-up-size__title {
+  @include font(25px, 30px, 700);
+  text-transform: uppercase;
+}
+
+.pop-up-size__text {
+  @include font(15px, 30px, 400);
+  color: $font-color-grey;
+}
+
 .pop-up-size__btn {
   background: $aqua-bg;
   border: 2px solid $aqua-bg;

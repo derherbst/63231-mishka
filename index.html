@@ -12,21 +12,23 @@
         <div class="page-header__wrapper">
           <nav class="main-nav main-nav--closed">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+              <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
             </ul>
+            <div class="main-nav__search"><a>Поиск по сайту</a></div>
+            <div class="main-nav__cart">
+              <a>Корзина: пока пуста</a>
+            </div>
             <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
           </nav>
-          <div class="main-nav__search">Поиск по сайту</div>
-          <div class="main-nav__cart">
-            <span>Корзина: пока пуста</span>
-          </div>
         </div>
       </header>
 
       <main class="main-wrapper">
         <div class="container-intro container-intro--index">
-          <h1>Милые штучки ручной работы для дома</h1>
+          <div class="container-intro__bg-wrapper">
+            <h1 class="container-intro__title container-intro__title--index">Милые штучки ручной работы для дома</h1>
+          </div>
         </div>
         <section class="category-block">
           <div class="category-block__item category-block__item--interior">
@@ -133,9 +135,9 @@
 
       <footer class="page-footer">
         <div class="page-footer__social-wrapper">
-          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">Instagram</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          <a class="social-link social-link--twitter" href="https://www.twitter.com">Twitter</a>
+          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
         </div>
         <div class="page-footer__copyright">
           Разработано:
@@ -148,9 +150,9 @@
         <p class="pop-up-size__text">Выберите размер:</p>
         <div class="pop-up-size__wrapper">
           <ul class="sizes-list">
-            <li class="sizes-list__item">S</li>
-            <li class="sizes-list__item">M</li>
-            <li class="sizes-list__item">L</li>
+            <li class="sizes-list__item"><button class="btn" type="button">S</button></li>
+            <li class="sizes-list__item"><button class="btn" type="button">M</button></li>
+            <li class="sizes-list__item"><button class="btn" type="button">L</button></li>
           </ul>
           <button class="pop-up-size__btn btn" type="button">Добавить</button>
         </div>

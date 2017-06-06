@@ -3,3 +3,14 @@
   line-height: $lh;
   font-weight: $fw;
 }
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+

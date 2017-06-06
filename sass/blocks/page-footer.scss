@@ -1,3 +1,11 @@
 .page-footer {
   background-color: $light-grey-bg;
+  width: 100%;
+}
+
+.page-footer__social-wrapper {
+  max-width: 150px;
+  height: 35px;
+  margin: 0 auto;
+//  @include clearfix();
 }

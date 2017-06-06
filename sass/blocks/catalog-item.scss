@@ -1,0 +1,18 @@
+.catalog-item__name {
+  @include font(17px, 24px, 700);
+  
+  a {
+    text-decoration: none;
+    color: $font-color-main;
+  }
+  
+}
+
+.catalog-item__price {
+  @include font(15px, 24px, 700);
+}
+
+.catalog-item__params {
+  @include font(13px, 30px, 400);
+  color: $font-color-grey;
+}
