@@ -1,7 +1,26 @@
+.video {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .video__title {
   @include font(17px, 24px, 700);
 }
 
+.video__wrapper {
+  position: relative;
+}
+
+.video__img {
+  
+  &--play {
+    position: absolute;
+    left: 80px;
+    top: 25%;
+  }
+}
+
 .video__text {
   @include font(13px, 24px, 400);
+  text-align: left;
 }

@@ -1,7 +1,25 @@
+.order-form {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 55px;
+}
+
 .order-form__title {
   color: $font-color-aqua;
   @include font(17px, 16px, 700);
   text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.order-form__group-fields {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-top: $aqua-border-thin;
+  text-align: left;
+  
+  &:nth-child(6) {
+    padding-bottom: 0;
+  }
 }
 
 .order-form__label {
@@ -23,6 +41,14 @@
   @include font(14px, 16px, 400);
 }
 
+.order-form__textarea {
+  color: #d2d2d2;
+}
+
 .order-form__send {
+  width: auto;
+  margin-top: 30px;
+  padding-left: 47px;
+  padding-right: 47px;
   background-color: $white-bg;
 }

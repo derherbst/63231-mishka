@@ -1,7 +1,12 @@
 .btn {
-  @include font(17px, 24px, 700);
+  display: block;
+  width: 241px;
+  padding: 15px 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
   text-decoration: none;
+  text-transform: uppercase;
   color: $font-color-grey;
   border: $grey-border;
-  padding: 15px 80px;
+  @include font(17px, 24px, 700);
 }

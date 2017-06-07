@@ -1,3 +1,7 @@
+.main-nav {
+  color: $font-color-black
+}
+
 .main-nav__toggle {
   display: block;
   width: 20px;
@@ -7,7 +11,7 @@
   border: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   
   &--closed {
     background: url(/img/icon-menu-close.svg) 50% 50% no-repeat;

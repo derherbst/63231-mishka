@@ -1,6 +1,14 @@
+.pop-up-size {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: 1px solid #c7c7c7;
+}
+
 .pop-up-size__title {
+  color: $font-color-black;
   @include font(25px, 30px, 700);
   text-transform: uppercase;
+  
 }
 
 .pop-up-size__text {

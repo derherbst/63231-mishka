@@ -8,7 +8,7 @@
   <body>
     <div class="body-wrapper">
       <header class="page-header">
-        <a class="page-header__logo" href="#"><img src="img/logo-mobile.svg" alt="Логотип Мишка"></a>
+        <a class="page-header__logo" href="/index.html"><img src="img/logo-mobile.svg" alt="Логотип Мишка"></a>
         <div class="page-header__wrapper">
           <nav class="main-nav main-nav--closed">
             <ul class="main-nav__list">
@@ -73,8 +73,10 @@
         </section>
         <section class="video">
           <h2 class="video__title">Процесс производства</h2>
-          <img src="/img/video-mobile@1x.jpg" alt="Видео превью" width="260" height="150">
-          <img src="/img/icon-play.svg">
+          <div class="video__wrapper">
+            <img class="video__img" src="/img/video-mobile@1x.jpg" alt="Видео превью" width="260" height="150">
+            <img class="video__img video__img--play" src="/img/icon-play.svg">
+          </div>
           <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         </section>
         <a class="catalog__purchase btn" href="">Сделать заказ</a>
@@ -82,13 +84,15 @@
 
       <footer class="page-footer">
         <div class="page-footer__social-wrapper">
-          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">Instagram</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          <a class="social-link social-link--twitter" href="https://www.twitter.com">Twitter</a>
+          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
         </div>
         <div class="page-footer__copyright">
           Разработано:
-          <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11"></a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
+            <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
+          </a>
         </div>
       </footer>
 
@@ -97,9 +101,9 @@
         <p class="pop-up-size__text">Выберите размер:</p>
         <div class="pop-up-size__wrapper">
           <ul class="sizes-list">
-            <li class="sizes-list__item"><button class="btn" type="button">S</button></li>
-            <li class="sizes-list__item"><button class="btn" type="button">M</button></li>
-            <li class="sizes-list__item"><button class="btn" type="button">L</button></li>
+            <li class="sizes-list__item"><button class="sizes-list__btn btn" type="button">S</button></li>
+            <li class="sizes-list__item"><button class="sizes-list__btn btn" type="button">M</button></li>
+            <li class="sizes-list__item"><button class="sizes-list__btn btn" type="button">L</button></li>
           </ul>
           <button class="pop-up-size__btn btn" type="button">Добавить</button>
         </div>
