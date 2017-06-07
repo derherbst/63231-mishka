@@ -1,9 +1,18 @@
 .page-header {
   min-height: 79px;
   max-height: 395px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .page-header__wrapper {
   font-family: 'Open Sans', 'Arial', sans-serif;
   @include font(17px, 24px, 700);
+}
+
+.page-header__logo {
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }

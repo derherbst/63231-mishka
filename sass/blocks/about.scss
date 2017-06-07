@@ -1,9 +1,21 @@
+.about {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 .about__title {
-  color: $font-color-main;
+  color: $font-color-black;
   @include font(25px, 30px, 700);
+  margin-top: 30px;
+}
+
+.about__item-list {
+  text-align: left;
 }
 
 .about__item {
-  color: $font-color-main;
+  color: $font-color-black;
   @include font(17px, 20px, 700);
 }

@@ -1,19 +1,26 @@
 .product {
   color: $font-color-grey;
+  padding-bottom: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .product__name {
-  color: $font-color-main;
+  color: $font-color-black;
   @include font(25px, 30px, 700);
 }
 
 .product__hot-lot {
   color: $font-color-aqua;
   @include font(17px, 20px, 400);
+  text-align: left;
 }
 
 .product__text {
   @include font(15px, 20px, 400);
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
 }
 
 .product__price {

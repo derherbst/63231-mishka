@@ -1,15 +1,26 @@
+.reviews {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .reviews__title {
-  color: $font-color-main;
+  color: $font-color-black;
   @include font(25px, 30px, 700);
 }
 
 .reviews__text {
   color: $font-color-grey;
   @include font(17px, 30px, 400);
+  text-align: left;
+}
+
+.reviews__item {
+  margin: 0;
 }
 
 .reviews__author-name {
-  color: $font-color-main;
+  color: $font-color-black;
   @include font(17px, 24px, 700);
 }
 
