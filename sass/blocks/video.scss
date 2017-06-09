@@ -1,0 +1,27 @@
+.video {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.video__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: $black;
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__img {
+  &--play {
+    position: absolute;
+    left: 80px;
+    top: 25%;
+  }
+}
+
+.video__text {
+  text-align: left;
+  color: $greyDark;
+}

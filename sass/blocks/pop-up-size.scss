@@ -1,0 +1,22 @@
+.pop-up-size {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: 1px solid $grey;
+}
+
+.pop-up-size__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.pop-up-size__text {
+  color: $greyDark;
+}
+
+.pop-up-size__btn {
+  background: $aqua;
+  border: 2px solid $aqua;
+  color: $white;
+}

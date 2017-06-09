@@ -1,0 +1,19 @@
+.page-header {
+  min-height: 79px;
+  max-height: 395px;
+  position: relative;
+}
+
+.page-header__wrapper {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-header__logo {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
