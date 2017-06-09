@@ -4,7 +4,10 @@
 }
 
 .video__title {
-  @include font(17px, 24px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
 }
 
 .video__wrapper {
@@ -21,6 +24,8 @@
 }
 
 .video__text {
-  @include font(13px, 24px, 400);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
   text-align: left;
 }

@@ -5,8 +5,10 @@
 }
 
 .order-form__title {
-  color: $font-color-aqua;
-  @include font(17px, 16px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $aqua;
   text-transform: uppercase;
   padding-right: 20px;
 }
@@ -17,32 +19,28 @@
   border-top: $aqua-border-thin;
   text-align: left;
   
-  &:nth-child(6) {
+  &:last-child {
     padding-bottom: 0;
   }
 }
 
 .order-form__label {
-  color: $font-color-black;
-  @include font(17px, 18px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
 }
 
 .order-form__input,
 .order-form__required-text {
-  color: $font-color-grey;
-  @include font(17px, 18px, 400);
-}
-
-.order-form__input {
-  @include font(17px, 18px, 400);
-}
-
-.order-form__required-text {
-  @include font(14px, 16px, 400);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $grey;
 }
 
 .order-form__textarea {
-  color: #d2d2d2;
+  color: $greyMedium;
 }
 
 .order-form__send {
@@ -50,5 +48,5 @@
   margin-top: 30px;
   padding-left: 47px;
   padding-right: 47px;
-  background-color: $white-bg;
+  background-color: $white;
 }

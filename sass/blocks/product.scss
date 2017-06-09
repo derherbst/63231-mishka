@@ -1,33 +1,38 @@
 .product {
-  color: $font-color-grey;
-  padding: 30px 30px 35px 30px;
-  
+  color: $grey;
+  padding: 30px 30px 35px 30px; 
 }
 
 .product__name {
-  color: $font-color-black;
-  @include font(25px, 30px, 700);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
 }
 
 .product__hot-lot {
-  color: $font-color-aqua;
-  @include font(17px, 20px, 400);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $aqua;
   text-align: left;
 }
 
 .product__text {
-  @include font(15px, 20px, 400);
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
   text-align: left;
 }
 
 .product__price {
-  @include font(17px, 24px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .product__purchase {
-  color: $font-color-grey;
-  background: $white-bg;
+  color: $grey;
+  background: $white;
   border: $grey-border;
 }

@@ -6,8 +6,10 @@
 }
 
 .about__title {
-  color: $font-color-black;
-  @include font(25px, 30px, 700);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
   margin-top: 30px;
 }
 
@@ -16,6 +18,8 @@
 }
 
 .about__item {
-  color: $font-color-black;
-  @include font(17px, 20px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
 }

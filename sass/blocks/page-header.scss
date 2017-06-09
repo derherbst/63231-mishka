@@ -2,17 +2,19 @@
   min-height: 79px;
   max-height: 395px;
   position: relative;
+}
+
+.page-header__wrapper {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.page-header__wrapper {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  @include font(17px, 24px, 700);
-}
-
 .page-header__logo {
   display: block;
-  margin-top: 21px;
-  margin-bottom: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }

@@ -1,20 +1,21 @@
 .category-block {
-  @include font(19px, 24px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .category-block__item {
-  
   &--interior {
-    background-color: $aqua-bg;
+    background-color: $aqua;
   }
   
   &--toys {
-    background-color: $cat-toys-bg;
+    background-color: $aquaDarker;
   }
 }
 
 .category-block__link {
   display: block;
   text-decoration: none;
-  color: $font-color-white;
+  color: $white;
 }

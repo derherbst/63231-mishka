@@ -6,13 +6,17 @@
 }
 
 .reviews__title {
-  color: $font-color-black;
-  @include font(25px, 30px, 700);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
 }
 
 .reviews__text {
-  color: $font-color-grey;
-  @include font(15px, 30px, 400);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $grey;
   text-align: left;
 }
 
@@ -21,8 +25,10 @@
 }
 
 .reviews__author-name {
-  color: $font-color-black;
-  @include font(17px, 24px, 700);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
 }
 
 .reviews__auhor‐nick {

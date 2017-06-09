@@ -1,5 +1,5 @@
 .main-nav {
-  color: $font-color-black
+  color: $black
 }
 
 .main-nav__toggle {
@@ -19,9 +19,8 @@
 }
 
 .main-nav__item {
-  
   a {
     text-decoration: none;
-    color: $font-color-black;
+    color: $black;
   }
 }
