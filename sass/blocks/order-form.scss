@@ -6,7 +6,7 @@
 
 .order-form__title {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1.2;
   font-weight: 700;
   color: $aqua;
   text-transform: uppercase;
@@ -25,16 +25,13 @@
 
 .order-form__label {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1.2;
   font-weight: 700;
   color: $black;
 }
 
 .order-form__input,
 .order-form__required-text {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
   color: $greyDark;
 }
 

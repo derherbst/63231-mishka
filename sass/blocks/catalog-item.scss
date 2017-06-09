@@ -1,17 +1,11 @@
 .catalog-item__name {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1.2;
   font-weight: 700;
   a {
     text-decoration: none;
     color: $black;
   }
-}
-
-.catalog-item__price {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700;
 }
 
 .catalog-item__params {

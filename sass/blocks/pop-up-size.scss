@@ -6,17 +6,14 @@
 
 .pop-up-size__title {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1.2;
   font-weight: 700;
   color: $black;
   text-transform: uppercase;
 }
 
 .pop-up-size__text {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $grey;
+  color: $greyDark;
 }
 
 .pop-up-size__btn {
