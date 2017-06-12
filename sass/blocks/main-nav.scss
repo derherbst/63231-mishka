@@ -1,25 +1,105 @@
 .main-nav {
-  color: $black
+  color: $black;
+  position: absolute;
+  top: 79px;
+  right: 0px;
+  background-color: $white;
+  width: 100%;
 }
 
 .main-nav__toggle {
   display: block;
+  position: absolute;
   width: 20px;
   height: 20px;
   background: url(/img/icon-menu-open.svg) 50% 50% no-repeat;
   background-size: 20px 14px;
   border: none;
-  position: absolute;
-  top: 0;
+  top: 30px;
   right: 30px;
   &--closed {
     background: url(/img/icon-menu-close.svg) 50% 50% no-repeat;
+    background-size: 20px 20px;
   }
+}
+
+.main-nav__item,
+.main-nav__search,
+.main-nav__cart {
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .main-nav__item {
   a {
     text-decoration: none;
     color: $black;
+  }
+  
+  &--mobile-hidden {
+    display: none;
+  }
+}
+
+.main-nav__note {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    position: absolute;
+    background-color: transparent;
+  }
+  
+  .main-nav__list {
+    @include clearfix();
+    width: 334px;
+  }
+  
+  .main-nav__item {
+    float: left;
+    width: 150px;
+    font-size: 15px;
+  }
+  
+  .main-nav__user-wrapper {
+    @include clearfix();
+    position: absolute;
+    top: -74px;
+    right: 50px;
+    margin-left: 350px;
+  }
+  
+  .main-nav__search,
+  .main-nav__cart {
+    border-left: $grey-border-thin;
+  }
+  
+  .main-nav__search {
+    float: left;
+    button {
+      display: block;
+      width: 18px;
+      height: 19px;
+      border: none;
+      background: url(/img/icon-search.svg) left top no-repeat;
+      background-size: 18px 19px;
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+    span {
+      display: none;
+    }
+  }
+  
+  .main-nav__cart {
+    float: right;
+  }
+  
+  .main-nav__note {
+  }
+  
+  .main-nav__toggle {
+    display: none;
   }
 }

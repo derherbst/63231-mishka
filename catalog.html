@@ -7,23 +7,27 @@
   </head>
   <body>
     <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <img src="img/logo-mobile.svg" alt="Логотип Мишка">
-      </a>
-      <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
-        </ul>
-        <div class="main-nav__search"><a>Поиск по сайту</a></div>
-        <div class="main-nav__cart">
-          <a>Корзина: пока пуста</a>
-        </div>
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
-      </nav>
-    </div>
-  </header>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </a>
+        <nav class="main-nav main-nav--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="/new.html">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="/sale.html">Распродажа</a></li>
+          </ul>
+          <div class="main-nav__search">
+            <a>Поиск по сайту</a>
+          </div>
+          <div class="main-nav__cart">
+            <a>Корзина: пока пуста</a>
+          </div>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
+        </nav>
+      </div>
+    </header>
 
     <main class="main">
       <div class="main__wrapper">
@@ -86,16 +90,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
-        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-        <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
-      </div>
-      <div class="page-footer__copyright">
-        Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
-          <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social-wrapper">
+          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано:
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
+            <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
+          </a>
+        </div>
       </div>
     </footer>
 

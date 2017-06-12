@@ -2,6 +2,12 @@
   color: $black;
   background-color: $greyLight;
   width: 100%;
+  @include on-center();
+}
+
+.page-footer__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .page-footer__social-wrapper {

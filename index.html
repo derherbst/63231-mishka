@@ -15,11 +15,18 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="/new.html">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="/sale.html">Распродажа</a></li>
           </ul>
-          <div class="main-nav__search"><a>Поиск по сайту</a></div>
-          <div class="main-nav__cart">
-            <a>Корзина: пока пуста</a>
+          <div class="main-nav__user-wrapper">
+            <div class="main-nav__search">
+              <button><span>Поиск по сайту</span></button>
+            </div>
+            <div class="main-nav__cart">
+              <a>Корзина: пока пуста</a>
+            </div>
           </div>
+          <span class="main-nav__note main-nav__note--mobile-hidden">Бесплатная доставка по России</span>
           <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
         </nav>
       </div>
@@ -49,9 +56,9 @@
             <h2 class="product__name">Вязанные корзинки</h2>
             <span class="product__hot-lot">Товар недели</span>
 
-            <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           </header>
           <div class="product__about-wrapper">
+            <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <ul class="product__table">
               <li class="product__item">
                 <span class="product__item--property">Цвет:</span>
@@ -137,16 +144,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
-        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-        <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
-      </div>
-      <div class="page-footer__copyright">
-        Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
-          <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social-wrapper">
+          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано:
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
+            <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
+          </a>
+        </div>
       </div>
     </footer>
 
