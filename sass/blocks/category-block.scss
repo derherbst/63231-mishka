@@ -22,11 +22,17 @@
 
 @media (min-width: 768px) {
   .category-block {
-    @include clearfix();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: -119px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   
   .category-block__item {
     width: 50%;
-    float: left;
+    min-height: 119px;
+    padding: 0;
   }
 }

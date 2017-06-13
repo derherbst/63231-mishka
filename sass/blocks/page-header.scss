@@ -29,14 +29,22 @@
 }
 
 @media (min-width: 768px) {
-  .page-header__wrapper {
+  .page-header {
+    min-height: 88px;
     padding-left: 50px;
     padding-right: 50px;
-    position: relative;
   }
-  
+  .page-header__wrapper {
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
   .page-header__logo {
     width: 167px;
     text-align: left;
+  }
+  .page-header__nav {
+    position: absolute;
+    top: 74px;
   }
 }

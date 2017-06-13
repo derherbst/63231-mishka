@@ -21,3 +21,48 @@
   font-weight: 700;
   color: $black;
 }
+
+@media (min-width: 768px) {
+  .about {
+    padding-top: 55px;
+    padding-left: (50/768*100%);
+    padding-right: (50/768*100%);
+    min-height: 583px; /*временно для сетки*/
+  }
+  .about__title {
+    margin-top: 0;
+    font-size: 43px;
+    line-height: 50px;
+    text-align: left;
+  }
+  .about__item-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about__item {
+    width: 50%;
+    padding-top: 110px;
+    p {
+      margin: 0;
+    }
+    &--ecology {
+      order: 1;
+    }
+    &--handmade {
+      order: 2;
+    }
+    &--style {
+      order: 3;
+    }
+    &--support {
+      order: 4;
+    }
+    &--likes {
+      order: 5;
+    }
+    &--gift {
+      order: 6;
+    }
+  }
+}

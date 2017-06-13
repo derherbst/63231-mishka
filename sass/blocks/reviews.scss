@@ -28,4 +28,30 @@
 
 .reviews__auhor‐nick {
   font-style: normal;
+  color: $greyDark;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .reviews__title {
+    width: (298/768*100%);
+    padding-left: (50/768*100%);
+    text-align: left;
+    order: 1;
+  }
+  .reviews__slider‐wrapper {
+    padding-left: (50/768*100%);
+    padding-right: (50/768*100%);
+    order: 3;
+  }
+  .reviews__write {
+    order: 2;
+  }
 }

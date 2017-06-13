@@ -2,3 +2,13 @@
   padding-bottom: 40px;
   @include on-center();
 }
+
+@media (min-width: 768px) {
+  .main {
+    width: auto;
+  }
+  
+  .main__wrapper {
+    width: 100%;
+  }
+}
