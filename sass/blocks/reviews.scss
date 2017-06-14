@@ -38,9 +38,13 @@
     flex-direction: row;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 85px;
+    min-height: 435px; /*временно для сетки*/
   }
   
   .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
     width: (298/768*100%);
     padding-left: (50/768*100%);
     text-align: left;
@@ -51,7 +55,17 @@
     padding-right: (50/768*100%);
     order: 3;
   }
+  .reviews__item {
+    text-align: left;
+  }
+  .reviews__text {
+    line-height: 30px;
+  }
   .reviews__write {
     order: 2;
+  }
+  .reviews__button-wrapper {
+    text-align: right;
+    margin-top: -25px;
   }
 }

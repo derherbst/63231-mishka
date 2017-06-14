@@ -8,10 +8,55 @@
 .page-footer__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__social-wrapper {
   max-width: 150px;
   height: 35px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 142px;
+    margin: 0;
+  }
+  
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .page-footer__logo,
+  .page-footer__social-wrapper,
+  .page-footer__copyright {
+    width: (100%/3);
+    margin: 0;
+  }
+  
+  .page-footer__logo {
+    display: block;
+    text-align: left;
+  }
+  
+  .page-footer__social-wrapper {
+    margin: 0;
+  }
+  
+  .page-footer__copyright {
+    text-align: right;
+  }
 }

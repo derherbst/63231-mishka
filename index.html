@@ -113,8 +113,10 @@
               <b class="reviews__author-name">Анастасия Красильникова</b>
               <cite class="reviews__auhor‐nick">@misssssiskras</cite>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <div class="reviews__button-wrapper">
+              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+              <button class="reviews__next" type="button">Следующий отзыв</button>
+            </div>
           </div>
           <a class="reviews__write btn" href="">Написать</a>
         </section>
@@ -122,12 +124,12 @@
           <h2 class="contacts__title">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--email">
-              <span class="contacts__item--property">e-mail:</span>
-              <a class="contacts__item--value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <span class="contacts__item-property">e-mail:</span>
+              <a class="contacts__item-value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </li>
-            <li class="contacts__item contacts__item--email">
-              <span class="contacts__item--property">адрес:</span>
-              <span class="contacts__item--value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            <li class="contacts__item contacts__item--address">
+              <span class="contacts__item-property">адрес:</span>
+              <span class="contacts__item-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
               </span>
             </li>
           </ul>
@@ -141,6 +143,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </a>
         <div class="page-footer__social-wrapper">
           <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
           <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
