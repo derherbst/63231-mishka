@@ -7,9 +7,16 @@
   .main {
     width: auto;
     padding-bottom: 0;
+    margin-top: -76px;
   }
   
   .main__wrapper {
     width: 100%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main {
+    margin-top: -74px;
   }
 }

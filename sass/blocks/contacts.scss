@@ -49,8 +49,13 @@
     padding-left: 3%;
     padding-right: 3%;
     line-height: 30px;
+    text-align: left;
   }
   .contacts__map {
     margin-bottom: 55px;
   }
+}
+
+@media (min-width: 1150px) {
+  
 }

@@ -13,21 +13,6 @@
   background-color: $white;
 }
 
-.page-header__logo {
-  display: block;
-  height: 79px;
-  
-  img {
-    padding-top: 22px;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-header {
-    min-height: 88px;
-  }
-}
-
 @media (min-width: 768px) {
   .page-header {
     min-height: 88px;
@@ -36,15 +21,7 @@
   }
   .page-header__wrapper {
     width: 100%;
-    position: relative;
     padding: 0;
-  }
-  .page-header__logo {
-    width: 167px;
-    text-align: left;
-  }
-  .page-header__nav {
-    position: absolute;
-    top: 74px;
+    background-color: transparent;
   }
 }
