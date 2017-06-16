@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened">
           <a class="main-nav__logo logo" href="#">
             <img src="img/logo-mobile.svg" alt="Логотип Мишка">
           </a>
@@ -32,14 +32,14 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="main__wrapper">
-        <div class="container-intro container-intro--index">
-          <div class="container-intro__bg-wrapper">
-            <h1 class="container-intro__title container-intro__title--index">Милые штучки ручной работы для дома</h1>
-          </div>
+    <main class="main"> 
+      <div class="container-intro container-intro--index">
+        <div class="container-intro__bg-wrapper">
+          <h1 class="container-intro__title container-intro__title--index">Милые штучки ручной работы для дома</h1>
         </div>
-        <section class="category-block">
+      </div>
+      <section class="category-block">
+        <div class="category-block__inner">
           <div class="category-block__item category-block__item--interior">
             <a class="category-block__link" href="/interior">
               <div class="category-block__item-text">Предметы интерьера</div>
@@ -50,12 +50,13 @@
               <div class="category-block__item-text">Мягкие игрушки</div>
             </a>
           </div>
-        </section>
-        <section class="product">
+        </div>
+      </section>
+      <section class="product">
+        <div class="product__inner">
           <header class="product__header">
             <h2 class="product__name">Вязанные корзинки</h2>
             <span class="product__caption">Товар недели</span>
-
           </header>
           <div class="product__about-wrapper">
             <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -79,8 +80,10 @@
             <p class="product__price">Цена: 990 руб.</p>
             <button class="product__purchase btn">Заказать</button>
           </div>
-        </section>
-        <section class="about">
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__inner">
           <h2 class="about__title">Коротко о нас:</h2>
           <div class="about__item-list">
             <div class="about__item about__item--ecology">
@@ -102,8 +105,10 @@
               <p>Поставляется в <br>подарочной упаковке</p>
             </div>
           </div>
-        </section>
-        <section class="reviews">
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__inner">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__slider‐wrapper slider">
             <blockquote class="reviews__item slider__item">
@@ -119,8 +124,10 @@
             </div>
           </div>
           <a class="reviews__write btn" href="">Написать</a>
-        </section>
-        <section class="contacts">
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__inner">
           <h2 class="contacts__title">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--email">
@@ -133,12 +140,14 @@
               </span>
             </li>
           </ul>
-          <div class="contacts__map">
-            <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
-          </div>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map-mobile@1x.jpg" width="100%" height="457" alt="Карта">
+        </div>
+        <div class="contacts__inner">
           <a class="contacts__write btn" href="">Напишите нам</a>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">

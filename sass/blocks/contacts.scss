@@ -2,6 +2,10 @@
   padding-top: 50px;
 }
 
+.contacts__inner {
+  @include on-center();
+}
+
 .contacts__title {
   font-size: 25px;
   font-weight: 700;
@@ -23,15 +27,11 @@
     padding-bottom: 57px;
   }
   .contacts__title {
-    padding-left: (50/768*100%);
-    padding-right: (50/768*100%);
     text-align: left;
     font-size: 43px;
     line-height: 50px;
   }
   .contacts__list {
-    padding-left: (50/768*100%);
-    padding-right: (50/768*100%);
     margin-bottom: 55px;
     display: flex;
     flex-direction: row;

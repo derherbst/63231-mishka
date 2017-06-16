@@ -2,11 +2,19 @@
   color: $black;
   background-color: $white;
   width: 100%;
+  &--opened {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .main-nav__logo {
   display: block;
-  height: 79px;
+  min-height: 79px;
   
   img {
     padding-top: 22px;
@@ -132,7 +140,6 @@
 @media (min-width: 1150px) {
   .main-nav {
     align-items: flex-start;
-    position: relative;
   }
   
   .main-nav__list {
