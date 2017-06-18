@@ -23,6 +23,10 @@ h3 {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 b {
   display: block;
 }
@@ -46,4 +50,8 @@ ul {
 button {
   padding: 0;
   cursor: pointer;
+}
+
+img {
+  height: auto;
 }

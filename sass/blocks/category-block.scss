@@ -4,7 +4,7 @@
 }
 
 .category-block__inner {
-    @include on-center();
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -33,6 +33,7 @@
   }
   
   .category-block__inner {
+    @include on-center();
     flex-direction: row;
   }
   

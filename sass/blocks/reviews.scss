@@ -75,11 +75,15 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    margin-left: (50/1150*100%);
-    margin-right: (50/1150*100%);
+    @include on-center();
+  }
+  
+  .reviews__inner {
+    padding-left: (100%/6);
   }
   
   .reviews__title {
-    padding-left: (175/1150*100%);
+    font-size: 53px;
+    line-height: 57px;
   }
 }

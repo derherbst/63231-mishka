@@ -21,6 +21,11 @@
   }
 }
 
+.main-nav__list,
+.main-nav__user-wrapper {
+  display: none;
+}
+
 .main-nav__toggle {
   display: block;
   position: absolute;

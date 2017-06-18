@@ -1,5 +1,9 @@
-.sizes-list__item {
-  display: inline-block;
+.sizes-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 31px;
 }
 
 .sizes-list__btn {
