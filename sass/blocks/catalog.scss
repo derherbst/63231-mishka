@@ -63,21 +63,17 @@
   .catalog {
     padding: 79px 0 53px;
   }
-  
   .catalog-item {
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  
   .catalog-item__image {
     flex: 0 0 50%;
   }
-  
   .catalog-item__info {
     flex-grow: 1;
     border-left: 0;
   }
-  
   .catalog-item__caption {
     margin-bottom: 182px;
   }
@@ -87,26 +83,18 @@
   .catalog {
     padding: 128px 0 57px;
   }
-  
   .catalog__inner {
     flex-direction: row;
     justify-content: space-between;
   }
-  
   .catalog-item {
     flex-direction: column;
     flex-wrap: nowrap;
     flex: 0 0 (314/1050*100%);
   }
-  
-  .catalog-item__image {
-    
-  }
-  
   .catalog-item__info {
     border-left: $greyDarker-border-thin;
   }
-  
   .catalog-item__caption {
     margin-bottom: 0;
   }

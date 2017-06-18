@@ -63,26 +63,22 @@
     @include on-center();
     position: relative;
   }
-  
   .contacts__inner {
     width: (2/6*100%);
     margin: 0;
     padding-left: (100%/6);
   }
-  
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 52px;
   }
-  
   .contacts__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 84px;
   }
-  
   .contacts__item {
     width: 100%;
     display: flex;
@@ -90,15 +86,13 @@
     &--email {
       margin-bottom: 30px;
     }
-  }
-  
+  } 
   .contacts__map {
     width: 50%;
     position: absolute;
     top: 0;
     right: 0;
   }
-  
   .contacts__write {
     margin: 0;
   }

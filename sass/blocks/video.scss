@@ -55,18 +55,15 @@
   .video__title {
     order: 2;
   }
-  
   .video__wrapper {
     flex-grow: 1;
     flex-basis: 100%;
     order: 1;
   }
-  
   .video__img {
     height: 455px;
     width: 100%;
   }
-  
   .video__info {
     padding-left: 41px;
     padding-right: 41px;
@@ -78,7 +75,6 @@
   .video__inner {
     flex-direction: row;
   }
-  
   .video__title {
     display: none;
     &--desktop {
@@ -86,19 +82,16 @@
       border: 0;
     }
   }
-  
   .video__wrapper {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 683px;
     order: 1;
   }
-  
   .video__img {
     height: 455px;
     width: 100%;
   }
-  
   .video__info {
     flex-grow: 0;
     flex-shrink: 0;

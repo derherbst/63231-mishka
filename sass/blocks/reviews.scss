@@ -47,7 +47,6 @@
     padding-bottom: 85px;
     min-height: 435px; /*временно для сетки*/
   }
-  
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
@@ -77,11 +76,9 @@
   .reviews {
     @include on-center();
   }
-  
   .reviews__inner {
     padding-left: (100%/6);
   }
-  
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
