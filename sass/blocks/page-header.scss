@@ -1,5 +1,8 @@
 .page-header {
   min-height: 79px;
+  @include tablet {
+    min-height: 88px;
+  }
 }
 
 .page-header__wrapper {
@@ -9,13 +12,7 @@
   font-weight: 700;
   font-family: 'Open Sans', 'Arial', sans-serif;
   background-color: $white;
-}
-
-@media (min-width: 768px) {
-  .page-header {
-    min-height: 88px;
-  }
-  .page-header__wrapper {
+  @include tablet {
     background-color: transparent;
   }
 }

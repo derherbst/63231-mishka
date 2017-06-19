@@ -1,16 +1,10 @@
 .main {
   padding-bottom: 40px;
-}
-
-@media (min-width: 768px) {
-  .main {
+  @include tablet {
     width: auto;
     padding-bottom: 62px;
   }
-}
-
-@media (min-width: 1150px) {
-  .main {
+  @include desktop {
     padding-bottom: 105px;
   }
 }

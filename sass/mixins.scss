@@ -12,16 +12,34 @@
   }
 }
 
+@mixin mobile {
+  @media (min-width: $mobile-width) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content
+  }
+}
+
 @mixin on-center() {
-  @media (min-width: 320px) {
+  @media (min-width: $mobile-width) {
     width: 260px;
     margin: 0 auto;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 668px;
     margin: 0 auto;
   }
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     width: 1050px;
     margin: 0 auto;
   }

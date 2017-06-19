@@ -14,6 +14,9 @@
   margin: 0;
   line-height: 1.6;
   padding: 24px 0;
+  @include tablet {
+    padding: 78px 0;
+  }
 }
 
 .order-form__title {
@@ -31,6 +34,12 @@
     height: 1px;
     background-color: #63d1bb;
   }
+  @include tablet {
+    flex: 1 0 25%;
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .order-form__group-fields {
@@ -41,6 +50,13 @@
   &:last-child {
     padding-bottom: 0;
   }
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px 0;
+  }
 }
 
 .order-form__wrapper {
@@ -49,17 +65,32 @@
   .order-form__label {
     padding: 0 0 22px 64px;
   }
+  @include tablet {
+    flex: 1 0 75%;
+    &--color {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .order-form__name-group {
   display: flex;
   flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .order-form__label {
   font-size: 17px;
   font-weight: 700;
   color: $black;
+  @include tablet {
+    &--color {
+      flex: 1 0 25%;
+    }
+  }
 }
 
 .order-form__input--checkbox,
@@ -77,54 +108,23 @@
   margin-top: 23px;
 }
 
-.order-form__send {
-  margin-top: 30px;
-  padding-left: 42px;
-  padding-right: 42px;
-  background-color: $white;
-  box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-  .order-form__intro {
-    padding: 78px 0;
-  }
-  .order-form__group-fields {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 50px 0;
-  }
-  .order-form__wrapper {
-    flex: 1 0 75%;
-    &--color {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
-  .order-form__title {
-    flex: 1 0 25%;
-    &::after {
-      display: none;
-    }
-  }
-  .order-form__label {
-    &--color {
-      flex: 1 0 25%;
-    }
-  }
-  .order-form__name-group {
-    flex-direction: row;
-  }
-  .order-form__sending-group {
+.order-form__sending-group {
+  @include tablet {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
   }
-  .order-form__send {
+}
+
+.order-form__send {
+  margin-top: 30px;
+  padding-left: (42 / 260 * 100%);
+  padding-right: (42 / 260 * 100%);
+  background-color: $white;
+  box-sizing: border-box;
+  @include tablet {
     margin-top: 0;
   }
 }

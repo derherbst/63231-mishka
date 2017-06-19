@@ -1,27 +1,67 @@
 .reviews {
   padding-top: 20px;
   padding-bottom: 35px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: url(/img/review@1x.jpg) no-repeat;
+    background-size: contain;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 85px;
+    min-height: 435px; /*временно для сетки*/
+  }
+  @include desktop {
+    @include on-center();
+  }
 }
 
 .reviews__inner {
   @include on-center();
   display: flex;
   flex-direction: column;
+  @include desktop {
+    padding-left: (100% / 6);
+  }
 }
 
 .reviews__title {
   font-size: 25px;
   font-weight: 700;
   color: $black;
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+    width: (298 / 768 * 100%);
+    text-align: left;
+    order: 1;
+  }
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.reviews__slider-wrapper {
+  @include tablet {
+    order: 3;
+  }
 }
 
 .reviews__text {
   color: $greyDark;
   text-align: left;
+  @include tablet {
+    line-height: 30px;
+  }
 }
 
 .reviews__item {
   margin: 0;
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .reviews__author-name {
@@ -35,52 +75,15 @@
   color: $greyDark;
 }
 
-@media (min-width: 768px) {
-  .reviews {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background: url(/img/review@1x.jpg) no-repeat;
-    background-size: contain;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 85px;
-    min-height: 435px; /*временно для сетки*/
-  }
-  .reviews__title {
-    font-size: 43px;
-    line-height: 50px;
-    width: (298/768*100%);
-    text-align: left;
-    order: 1;
-  }
-  .reviews__slider‐wrapper {
-    order: 3;
-  }
-  .reviews__item {
-    text-align: left;
-  }
-  .reviews__text {
-    line-height: 30px;
-  }
-  .reviews__write {
+.reviews__write {
+  @include tablet {
     order: 2;
-  }
-  .reviews__button-wrapper {
-    text-align: right;
-    margin-top: -25px;
   }
 }
 
-@media (min-width: 1150px) {
-  .reviews {
-    @include on-center();
-  }
-  .reviews__inner {
-    padding-left: (100%/6);
-  }
-  .reviews__title {
-    font-size: 53px;
-    line-height: 57px;
+.reviews__button-wrapper {
+  @include tablet {
+    text-align: right;
+    margin-top: -25px;
   }
 }

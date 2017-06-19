@@ -11,17 +11,7 @@
     background-image: none;
     background-color: $greyLight;
   }
-}
-
-.container-intro__title {
-  font-size: 27px;
-  line-height: 1.1;
-  font-weight: 700;
-  color: $black;
-}
-
-@media (min-width: 768px) {
-  .container-intro__bg-wrapper {
+  @include tablet {
     padding-top: 155px;
     padding-bottom: 365px;
     background-size: cover;
@@ -30,19 +20,23 @@
       padding-bottom: 85px;
     }
   }
-  .container-intro__title {
-    font-size: 43px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width: 1150px) {
-  .container-intro__bg-wrapper {
+  @include desktop {
     &--no-img {
       padding: 103px 0 110px;
     }
   }
-  .container-intro__title {
+}
+
+.container-intro__title {
+  font-size: 27px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: $black;
+  @include tablet {
+    font-size: 43px;
+    line-height: 1.2;
+  }
+  @include desktop {
     font-size: 53px;
   }
 }

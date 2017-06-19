@@ -2,6 +2,7 @@
   color: $black;
   background-color: $white;
   width: 100%;
+  
   &--opened {
     position: absolute;
     top: 0;
@@ -9,6 +10,17 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+  @include tablet {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include desktop {
+    align-items: flex-start;
   }
 }
 
@@ -18,11 +30,50 @@
   img {
     padding-top: 22px;
   }
+  @include tablet {
+    width: (167 / 768 * 100%);
+    text-align: left;
+    order: 1;
+  }
+  @include desktop {
+    width: 23%;
+    order: 2;
+  }
 }
 
 .main-nav__list,
 .main-nav__user-wrapper {
   display: none;
+}
+
+.main-nav__list {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    order: 3;
+  }
+  @include desktop {
+    width: 42%;
+    order: 1;
+  }
+}
+
+.main-nav__user-wrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    order: 2;
+    width: 50%;
+  }
+  @include desktop {
+    width: 32%;
+    order: 3;
+  }
 }
 
 .main-nav__toggle {
@@ -38,6 +89,40 @@
   &--closed {
     background: url(/img/icon-menu-close.svg) 50% 50% no-repeat;
     background-size: 20px 20px;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav__search {
+  @include tablet {
+    button {
+      display: block;
+      width: 18px;
+      height: 19px;
+      border: none;
+      background: url(/img/icon-search.svg) left top no-repeat;
+      background-size: 18px 19px;
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+    span {
+      display: none;
+    }
+  }
+}
+
+.main-nav__cart {
+  @include tablet {
+    float: right;
+  }
+}
+
+.main-nav__search,
+.main-nav__cart {
+  @include tablet {
+    border-left: $grey-border-thin;
   }
 }
 
@@ -56,103 +141,28 @@
   &--mobile-hidden {
     display: none;
   }
-}
-
-.main-nav__note {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .main-nav {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main-nav__logo {
-    width: (167/768*100%);
-    text-align: left;
-    order: 1;
-  }
-  .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 47%;
-    order: 3;
-  }
-  .main-nav__item {
+  @include tablet {
     font-size: 15px;
     text-align: left;
     width: 50%;
   }
-  .main-nav__user-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    order: 2;
-    width: 52%;
-  }
-  .main-nav__search,
-  .main-nav__cart {
-    border-left: $grey-border-thin;
-  }
-  .main-nav__search {
-    button {
+  @include desktop {
+    &--mobile-hidden {
       display: block;
-      width: 18px;
-      height: 19px;
-      border: none;
-      background: url(/img/icon-search.svg) left top no-repeat;
-      background-size: 18px 19px;
-      padding-left: 33px;
-      padding-right: 33px;
-    }
-    span {
-      display: none;
     }
   }
-  .main-nav__cart {
-    float: right;
-  }
-  .main-nav__note {
+}
+
+.main-nav__note {
+  display: none;
+  @include tablet {
     display: block;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
     order: 4;
   }
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: 1150px) {
-  .main-nav {
-    align-items: flex-start;
-  }
-  .main-nav__list {
-    width: 42%;
-    order: 1;
-  }
-  .main-nav__item {
-    &--mobile-hidden {
-      display: block;
-    }
-  }
-  .main-nav__logo {
-    width: 23%;
-    order: 2;
-  }
-  .main-nav__user-wrapper {
-    width: 32%;
-    order: 3;
-  }
-  .main-nav__note {
+  @include desktop {
     position: absolute;
     right: 0;
     bottom: 25px;
