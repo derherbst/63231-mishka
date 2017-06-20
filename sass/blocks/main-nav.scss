@@ -2,7 +2,7 @@
   color: $black;
   background-color: $white;
   width: 100%;
-  
+
   &--opened {
     position: absolute;
     top: 0;
@@ -11,7 +11,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  
+
   @include tablet {
     background-color: transparent;
     display: flex;
@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   @include desktop {
     align-items: flex-start;
   }
@@ -32,13 +32,13 @@
   img {
     padding-top: 22px;
   }
-  
+
   @include tablet {
     width: (167 / 768 * 100%);
     text-align: left;
     order: 1;
   }
-  
+
   @include desktop {
     width: 23%;
     order: 2;
@@ -51,7 +51,7 @@
 }
 
 .main-nav__list {
-  
+
 @include tablet {
   display: flex;
   flex-direction: row;
@@ -67,7 +67,7 @@
 }
 
 .main-nav__user-wrapper {
-  
+
 @include tablet {
   display: flex;
   flex-direction: row;
@@ -96,14 +96,14 @@
     background: url(../img/icon-menu-close.svg) 50% 50% no-repeat;
     background-size: 20px 20px;
   }
-  
+
   @include tablet {
     display: none;
   }
 }
 
 .main-nav__search {
-  
+
 @include tablet {
   button {
     display: block;
@@ -130,7 +130,7 @@
       color: rgba(0, 0, 0, .3);
     }
   }
-  
+
   @include tablet {
     float: right;
   }
@@ -138,7 +138,7 @@
 
 .main-nav__search,
 .main-nav__cart {
-  
+
   @include tablet {
     border-left: $grey-border-thin;
   }
@@ -165,13 +165,13 @@
   &--mobile-hidden {
     display: none;
   }
-  
+
   @include tablet {
     font-size: 15px;
     text-align: left;
     width: 50%;
   }
-  
+
   @include desktop {
     &--mobile-hidden {
       display: block;
@@ -181,7 +181,7 @@
 
 .main-nav__note {
   display: none;
-  
+
   @include tablet {
     display: block;
     font-size: 15px;
@@ -189,7 +189,7 @@
     font-weight: 400;
     order: 4;
   }
-  
+
   @include desktop {
     position: absolute;
     right: 0;

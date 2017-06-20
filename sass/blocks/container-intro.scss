@@ -12,7 +12,7 @@
     background-image: none;
     background-color: $greyLight;
   }
-  
+
   @include tablet {
     padding-top: 155px;
     padding-bottom: 365px;
@@ -22,7 +22,7 @@
       padding-bottom: 85px;
     }
   }
-  
+
   @include desktop {
     &--no-img {
       padding: 103px 0 110px;
@@ -41,12 +41,12 @@
   &--index {
     margin-bottom: 118px;
   }
-  
+
   @include tablet {
     font-size: 43px;
     line-height: 1.2;
   }
-  
+
   @include desktop {
     font-size: 53px;
   }

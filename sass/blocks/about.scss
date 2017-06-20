@@ -1,14 +1,14 @@
 .about {
   padding-top: 30px;
   padding-bottom: 20px;
-  
+
   @include tablet {
     padding-top: 55px;
     padding-left: (50 / 768 * 100%);
     padding-right: (50 / 768 * 100%);
     min-height: 583px; /*временно для сетки*/
   }
-  
+
   @include desktop {
     padding-top: 70px;
     padding-left: 0;
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+
   @include desktop {
     padding-left: (1050px / 6);
     box-sizing: border-box;
@@ -33,7 +33,7 @@
   font-weight: 700;
   color: $black;
   margin-top: 30px;
-  
+
   @include tablet {
     margin-top: 0;
     font-size: 43px;
@@ -47,13 +47,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
-  
+
   @include tablet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   @include desktop {
     justify-content: center;
   }
@@ -63,7 +63,7 @@
   font-size: 17px;
   font-weight: 700;
   color: $black;
-  
+
   @include tablet {
     width: 50%;
     padding-top: 110px;
