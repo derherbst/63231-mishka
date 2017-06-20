@@ -64,7 +64,7 @@
   @include tablet {
     text-align: left;
     width: 50%;
-  
+
     &--address {
       display: flex;
       flex-direction: row;
@@ -76,7 +76,7 @@
     width: 100%;
     display: flex;
     align-items: baseline;
-  
+
     &--email {
       margin-bottom: 30px;
     }
