@@ -7,114 +7,145 @@
   </head>
   <body>
     <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <img src="img/logo-mobile.svg" alt="Логотип Мишка">
-      </a>
-      <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
-        </ul>
-        <div class="main-nav__search"><a>Поиск по сайту</a></div>
-        <div class="main-nav__cart">
-          <a>Корзина: пока пуста</a>
-        </div>
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
-      </nav>
-    </div>
-  </header>
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--opened">
+          <a class="main-nav__logo logo" href="index.html">
+            <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="new.html">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="sale.html">Распродажа</a></li>
+          </ul>
+          <div class="main-nav__user-wrapper">
+            <div class="main-nav__search">
+              <button><span>Поиск по сайту</span></button>
+            </div>
+            <div class="main-nav__cart">
+              <a href="#">Корзина: пока пуста</a>
+            </div>
+          </div>
+          <span class="main-nav__note main-nav__note--mobile-hidden">Бесплатная доставка по России</span>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
+        </nav>
+      </div>
+    </header>
 
     <main class="main">
-      <div class="main__wrapper">
-        <div class="container-intro">
-          <div class="container-intro__bg-wrapper container-intro__bg-wrapper--no-img">
-            <h1 class="container-intro__title container-intro__title--catalog">Каталог товаров</h1>
-          </div>
+      <div class="container-intro">
+        <div class="container-intro__bg-wrapper container-intro__bg-wrapper--no-img">
+          <h1 class="container-intro__title container-intro__title--catalog">Каталог товаров</h1>
         </div>
-        <section class="catalog">
+      </div>
+      <section class="catalog">
+        <div class="catalog__inner">
           <div class="catalog-item">
             <a class="catalog-item__image" href="#">
               <img src="/img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
             </a>
-            <div class="catalog-item__caption">
-              <h3 class="catalog-item__name"><a href="#">Зайчик-попрыгайчик</a></h3>
-              <p class="catalog-item__params">Рост 30см, вес 200г</p>
-            </div>
-            <div class="catalog-item__purchase-wrapper">
-              <span class="catalog-item__price">1 200 руб.</span>
-              <button class="catalog-item__basket" type="button"></button>
+            <div class="catalog-item__info">
+              <div class="catalog-item__caption">
+                <h3 class="catalog-item__name"><a href="#">Зайчик-попрыгайчик</a></h3>
+                <p class="catalog-item__params">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="catalog-item__purchase-wrapper">
+                <span class="catalog-item__price">1 200 руб.</span>
+                <a class="catalog-item__basket" href="#">
+                  <img class="catalog-item__basket-icon" width="22" height="22">
+                </a>
+              </div>
             </div>
           </div>
           <div class="catalog-item">
             <a class="catalog-item__image" href="#">
               <img src="/img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
             </a>
-            <div class="catalog-item__caption">
-              <h3 class="catalog-item__name"><a href="#">Корзинка для белья</a></h3>
-              <p class="catalog-item__params">Диаметр 15см, высота 10см</p>
-            </div>
-            <div class="catalog-item__purchase-wrapper">
-              <span class="catalog-item__price">690 руб.</span>
-              <button class="catalog-item__basket" type="button"></button>
+            <div class="catalog-item__info">
+              <div class="catalog-item__caption">
+                <h3 class="catalog-item__name"><a href="#">Корзинка для белья</a></h3>
+                <p class="catalog-item__params">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="catalog-item__purchase-wrapper">
+                <span class="catalog-item__price">690 руб.</span>
+                <a class="catalog-item__basket" href="#">
+                  <img class="catalog-item__basket-icon" width="22" height="22">
+                </a>
+              </div>
             </div>
           </div>
           <div class="catalog-item">
             <a class="catalog-item__image" href="#">
               <img src="/img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек" width="260" height="195">
             </a>
-            <div class="catalog-item__caption">
-              <h3 class="catalog-item__name"><a href="#">Большая корзина для игрушек</a></h3>
-              <p class="catalog-item__params">Диаметр 30см, высота 30см</p>
-            </div>
-            <div class="catalog-item__purchase-wrapper">
-              <span class="catalog-item__price">1 500 руб.</span>
-              <button class="catalog-item__basket" type="button"></button>
+            <div class="catalog-item__info">
+              <div class="catalog-item__caption">
+                <h3 class="catalog-item__name"><a href="#">Большая корзина для игрушек</a></h3>
+                <p class="catalog-item__params">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="catalog-item__purchase-wrapper">
+                <span class="catalog-item__price">1 500 руб.</span>
+                <a class="catalog-item__basket" href="#">
+                  <img class="catalog-item__basket-icon" width="22" height="22">
+                </a>
+              </div>
             </div>
           </div>
-        </section>
-        <section class="video">
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__inner">
           <h2 class="video__title">Процесс производства</h2>
           <div class="video__wrapper">
             <img class="video__img" src="/img/video-mobile@1x.jpg" alt="Видео превью" width="260" height="150">
             <img class="video__img video__img--play" src="/img/icon-play.svg">
           </div>
-          <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="catalog__purchase btn" href="">Сделать заказ</a>
-        </section>
-      </div>
+          <div class="video__info">
+            <h2 class="video__title video__title--desktop">Процесс производства</h2>
+            <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="catalog__purchase btn" href="">Сделать заказ</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
-        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-        <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
-      </div>
-      <div class="page-footer__copyright">
-        Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
-          <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo" href="#">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка">
         </a>
+        <div class="page-footer__social-wrapper">
+          <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social-link social-link--twitter" href="https://www.twitter.com"></a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано:
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
+            <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
+          </a>
+        </div>
       </div>
     </footer>
 
     <div class="pop-up-size pop-up-size--hidden">
-      <b class="pop-up-size__title">Добавить в корзину</b>
-      <p class="pop-up-size__text">Выберите размер:</p>
-      <div class="pop-up-size__wrapper">
-        <ul class="sizes-list">
-          <li class="sizes-list__item">
-            <button class="sizes-list__btn btn" type="button">S</button>
-          </li>
-          <li class="sizes-list__item">
-            <button class="sizes-list__btn btn" type="button">M</button>
-          </li>
-          <li class="sizes-list__item">
-            <button class="sizes-list__btn btn" type="button">L</button>
-          </li>
-        </ul>
-        <button class="pop-up-size__btn btn" type="button">Добавить</button>
+      <div class="pop-up-size__inner">
+        <h2 class="pop-up-size__title">Добавить в корзину</h2>
+        <p class="pop-up-size__text">Выберите размер:</p>
+        <div class="pop-up-size__wrapper">
+          <ul class="sizes-list">
+            <li class="sizes-list__item">
+              <button class="sizes-list__btn btn" type="button">S</button>
+            </li>
+            <li class="sizes-list__item">
+              <button class="sizes-list__btn btn" type="button">M</button>
+            </li>
+            <li class="sizes-list__item">
+              <button class="sizes-list__btn btn" type="button">L</button>
+            </li>
+          </ul>
+          <button class="pop-up-size__btn btn" type="button">Добавить</button>
+        </div>
       </div>
     </div>
   </body>

@@ -5,11 +5,11 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0px;
   padding: 0px;
-  max-width: $mobile-width;
+  min-width: $mobile-width;
   margin: 0 auto;
-  text-align: center;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $white;
   color: $grey;
@@ -21,6 +21,10 @@ h3 {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+p {
+  margin: 0;
 }
 
 b {
@@ -45,4 +49,13 @@ ul {
 
 button {
   padding: 0;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  height: auto;
 }
