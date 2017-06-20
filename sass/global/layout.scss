@@ -10,7 +10,6 @@ body {
   padding: 0px;
   min-width: $mobile-width;
   margin: 0 auto;
-  text-align: center;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $white;
   color: $grey;
@@ -50,6 +49,10 @@ ul {
 
 button {
   padding: 0;
+  cursor: pointer;
+}
+
+a {
   cursor: pointer;
 }
 

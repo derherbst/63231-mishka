@@ -1,9 +1,11 @@
 .catalog {
   padding-top: 30px;
   padding-bottom: 30px;
+  
   @include tablet {
     padding: 79px 0 53px;
   }
+  
   @include desktop {
     padding: 128px 0 57px;
   }
@@ -13,6 +15,7 @@
   @include on-center();
   display: flex;
   flex-direction: column;
+  
   @include desktop {
     flex-direction: row;
     justify-content: space-between;

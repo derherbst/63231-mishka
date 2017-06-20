@@ -1,16 +1,19 @@
 .category-block {
   font-size: 17px;
   font-weight: 700;
+  
   @include tablet {
     margin-top: -119px;
   }
 }
 
 .category-block__inner {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  
   @include tablet {
     @include on-center();
     flex-direction: row;
@@ -18,14 +21,13 @@
 }
 
 .category-block__item {
-  padding-top: 28px;
-  padding-bottom: 28px;
   &--interior {
     background-color: $aqua;
   }
   &--toys {
     background-color: $aquaDarker;
   }
+  
   @include tablet {
     width: 50%;
     min-height: 119px;
@@ -37,4 +39,10 @@
   display: block;
   text-decoration: none;
   color: $white;
+  padding: 25px 95px 30px (30 / 260 * 100%);
+  position: relative;
+}
+
+.category-block__item-name {
+  text-align: left;
 }

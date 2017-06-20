@@ -1,9 +1,11 @@
 .contacts {
   padding-top: 50px;
+  
   @include tablet {
     padding-top: 65px;
     padding-bottom: 57px;
   }
+  
   @include desktop {
     @include on-center();
     position: relative;
@@ -12,6 +14,7 @@
 
 .contacts__inner {
   @include on-center();
+  
   @include desktop {
     width: (2 / 6 * 100%);
     margin: 0;
@@ -23,11 +26,13 @@
   font-size: 25px;
   font-weight: 700;
   color: $black;
+  
   @include tablet {
     text-align: left;
     font-size: 43px;
     line-height: 50px;
   }
+  
   @include desktop {
     font-size: 53px;
     line-height: 57px;
@@ -37,6 +42,7 @@
 
 .contacts__list {
   color: $greyDark;
+  
   @include tablet {
     margin-bottom: 55px;
     display: flex;
@@ -44,6 +50,7 @@
     flex-wrap: nowrap;
     font-size: 17px;
   }
+  
   @include desktop {
     display: flex;
     flex-direction: column;
@@ -53,6 +60,7 @@
 }
 
 .contacts__item {
+  
   @include tablet {
     text-align: left;
     width: 50%;
@@ -63,6 +71,7 @@
       flex-wrap: nowrap;
     }
   }
+  
   @include desktop {
     width: 100%;
     display: flex;
@@ -75,6 +84,7 @@
 }
 
 .contacts__item-value {
+  
   @include tablet {
     padding-left: 3%;
     padding-right: 3%;
@@ -86,15 +96,18 @@
 .contacts__write {
   padding-left: (44 / 260 * 100%);
   padding-right: (44 / 260 * 100%);
+  
   @include desktop {
     margin: 0;
   }
 }
 
 .contacts__map {
+  
   @include tablet {
     margin-bottom: 55px;
   }
+  
   @include desktop {
     width: 50%;
     position: absolute;
