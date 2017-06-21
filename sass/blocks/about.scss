@@ -1,6 +1,19 @@
 .about {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 33px;
+  padding-bottom: 27px;
+//  position: relative;
+//  &::after {
+//    bottom: 0;
+//    left: 0;
+//    content: "";
+//    position: absolute;
+//    height: 28px;
+//    width: 100%;
+//    background-image: url(/img/icon-right-arrow.svg);
+//    background-repeat: repeat-x;
+//    background-position: -2px 12px;
+//    background-size: 16px;
+//  }
 
   @include tablet {
     padding-top: 55px;
@@ -32,7 +45,7 @@
   font-size: 25px;
   font-weight: 700;
   color: $black;
-  margin-top: 30px;
+  margin-bottom: 33px;
 
   @include tablet {
     margin-top: 0;
@@ -60,9 +73,86 @@
 }
 
 .about__item {
+  position: relative;
   font-size: 17px;
   font-weight: 700;
   color: $black;
+  padding-top: 54px;
+  margin-bottom: 29px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &--ecology {
+    &::before {
+      top: -2px;
+      left: 8px;
+      width: 32px;
+      height: 39px;
+      background-image: url(/img/icon-feature-1.svg);
+      background-repeat: no-repeat;
+      background-position: 20.498565% 31.30862%;
+    }
+  }
+  &--handmade {
+    &::before {
+      top: 2px;
+      left: 2px;
+      width: 37px;
+      height: 35px;
+      background-image: url(/img/icon-feature-2.svg);
+      background-repeat: no-repeat;
+      background-position: 20.498565% 31.30862%;
+    }
+  }
+  &--style {
+    &::before {
+      top: -4px;
+      left: -1px;
+      width: 53px;
+      height: 39px;
+      background-image: url(/img/icon-feature-3.svg);
+      background-repeat: no-repeat;
+      background-position: 20.498565% 31.30862%;
+    }
+  }
+  &--support {
+    &::before {
+      top: 2px;
+      left: -6px;
+      width: 55px;
+      height: 25px;
+      background-image: url(/img/icon-feature-4.svg);
+      background-repeat: no-repeat;
+      background-position: 20.498565% 31.30862%;
+    }
+  }
+  &--likes {
+    &::before {
+      top: 4px;
+      left: 7px;
+      width: 33px;
+      height: 30px;
+      background-image: url(/img/icon-feature-5.svg);
+      background-repeat: no-repeat;
+      background-position: 20.498565% 31.30862%;
+    }
+  }
+  &--gift {
+    &::before {
+      top: 0px;
+      left: 3px;
+      width: 34px;
+      height: 34px;
+      background-image: url(/img/icon-feature-6.svg);
+      background-repeat: no-repeat;
+      background-position: 20.498565% 31.30862%;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include tablet {
     width: 50%;

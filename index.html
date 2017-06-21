@@ -8,19 +8,27 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <a class="main-nav__logo logo" href="#">
             <img src="img/logo-mobile.svg" alt="Логотип Мишка">
           </a>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="new.html">Новые поступления</a></li>
-            <li class="main-nav__item main-nav__item--mobile-hidden"><a href="sale.html">Распродажа</a></li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--mobile-hidden">
+              <a href="new.html">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--mobile-hidden">
+              <a href="sale.html">Распродажа</a>
+            </li>
           </ul>
           <div class="main-nav__user-wrapper">
             <div class="main-nav__search">
-              <button><span>Поиск по сайту</span></button>
+              <a href="#">Поиск по сайту</a>
             </div>
             <div class="main-nav__cart">
               <a>Корзина: пока пуста</a>
@@ -62,16 +70,16 @@
             <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <ul class="product__table">
               <li class="product__item">
-                <span class="product__item--property">Цвет:</span>
-                <span class="product__item--value">«Тиффани»/серый</span>
+                <span class="product__item-property">Цвет:</span>
+                <span class="product__item-value">«Тиффани»/серый</span>
               </li>
               <li class="product__item">
-                <span class="product__item--property">Диаметр:</span>
-                <span class="product__item--value">25 см</span>
+                <span class="product__item-property">Диаметр:</span>
+                <span class="product__item-value">25 см</span>
               </li>
               <li class="product__item">
-                <span class="product__item--property">Высота:</span>
-                <span class="product__item--value">15 см</span>
+                <span class="product__item-property">Высота:</span>
+                <span class="product__item-value">15 см</span>
               </li>
             </ul>
             <div class="product__image">
@@ -119,8 +127,8 @@
               <cite class="reviews__auhor‐nick">@misssssiskras</cite>
             </blockquote>
             <div class="reviews__button-wrapper">
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
+              <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
+              <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
             </div>
           </div>
           <a class="reviews__write btn" href="">Написать</a>
@@ -132,11 +140,15 @@
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--email">
               <span class="contacts__item-property">e-mail:</span>
-              <a class="contacts__item-value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__item-value contacts__item-value--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </li>
             <li class="contacts__item contacts__item--address">
               <span class="contacts__item-property">адрес:</span>
-              <span class="contacts__item-value">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8,&nbsp;офис 101
+              <span class="contacts__item-value">г. Санкт-Петербург,
+                                                <br>
+                                                ул. Большая Конюшенная,
+                                                <br>
+                                                д. 19/8, офис 101
               </span>
             </li>
           </ul>
@@ -163,7 +175,7 @@
         <div class="page-footer__copyright">
           Разработано:
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive/11">
-            <img src="img/htmlacademy.svg" width="27" height="34px" alt="Логотип Академии">
+            <img src="img/htmlacademy.svg" width="35" height="37px" alt="Логотип Академии">
           </a>
         </div>
       </div>

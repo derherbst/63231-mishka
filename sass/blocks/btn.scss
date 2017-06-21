@@ -1,14 +1,22 @@
 .btn {
   font-size: 17px;
-  line-height: 1.4;
+  line-height: 1.3;
   font-weight: 700;
   display: block;
-  padding: 15px 80px;
+  padding: 14px 82px;
   margin: 0 auto;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: $greyDark;
-  border: $grey-border;
+  border: 2px solid $greyDark;
+  &:hover {
+    background-color: $greyDark;
+    color: $white;
+    border-color: $greyDark;
+  }
+  &:active {
+    color: rgba(255, 255, 255, .3)
+  }
 }

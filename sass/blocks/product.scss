@@ -25,7 +25,7 @@
 }
 
 .product__header {
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 
   @include tablet {
     display: flex;
@@ -49,7 +49,7 @@
   line-height: 1.2;
   font-weight: 700;
   color: $black;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 
   @include tablet {
     font-size: 43px;
@@ -66,6 +66,7 @@
   font-weight: 700;
   color: $aqua;
   text-align: left;
+  text-transform: uppercase;
 
   @include tablet {
     text-align: center;
@@ -100,7 +101,7 @@
 .product__text {
   text-align: left;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   @include tablet {
     margin: 0;
@@ -110,7 +111,8 @@
 }
 
 .product__table {
-  margin-bottom: 28px;
+  
+  margin-bottom: 27px;
 
   @include tablet {
     margin-top: 52px;
@@ -118,13 +120,26 @@
 }
 
 .product__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   border-bottom: 1px solid #ececec;
   padding-top: 11px;
   padding-bottom: 11px;
 }
 
+.product__item-property {
+  flex: 1 0 38%;
+  justify-content: flex-start;
+}
+
+.product__item-value {
+  flex: 1 0 62%;
+  justify-content: flex-start;
+}
+
 .product__image {
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 
   @include tablet {
     position: absolute;
@@ -157,7 +172,6 @@
 .product__purchase {
   color: $greyDark;
   background: $white;
-  border: $grey-border;
   &:hover {
     background-color: $greyDark;
     color: $white;

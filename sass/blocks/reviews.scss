@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 20px;
+  padding-top: 27px;
   padding-bottom: 35px;
 
   @include tablet {
@@ -33,6 +33,7 @@
   font-size: 25px;
   font-weight: 700;
   color: $black;
+  margin-bottom: 24px;
 
   @include tablet {
     font-size: 43px;
@@ -58,6 +59,8 @@
 .reviews__text {
   color: $greyDark;
   text-align: left;
+  line-height: 2;
+  margin-bottom: 30px;
 
   @include tablet {
     line-height: 30px;
@@ -66,6 +69,7 @@
 
 .reviews__item {
   margin: 0;
+  margin-bottom: 33px;
 
   @include tablet {
     text-align: left;
@@ -76,24 +80,49 @@
   font-size: 17px;
   font-weight: 700;
   color: $black;
+  margin-bottom: 9px;
 }
 
 .reviews__auhor‐nick {
+  font-size: 17px;
   font-style: normal;
   color: $greyDark;
 }
 
 .reviews__write {
-
-@include tablet {
-  order: 2;
-}
+  border: 2px solid $greyDark;
+  @include tablet {
+    order: 2;
+  }
 }
 
 .reviews__button-wrapper {
-
-@include tablet {
-  text-align: right;
-  margin-top: -25px;
+  font-size: 0px;
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 38px;
+  
+  @include tablet {
+    text-align: right;
+    margin-top: -25px;
+  }
 }
+
+.reviews__button {
+  font-size: 0px;
+  display: inline-block;
+  vertical-align: top;
+  width: 49.9%;
+  border: 0;
+  min-height: 50px;
+  &--prev {
+    background: url(/img/icon-left-arrow.svg) no-repeat;
+    background-position: center;
+    border-right: 1px solid #ececec;
+  }
+  &--next {
+    background: url(/img/icon-right-arrow.svg) no-repeat;
+    background-position: center;
+  }
 }
