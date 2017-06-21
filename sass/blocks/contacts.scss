@@ -2,7 +2,7 @@
   padding-top: 50px;
 
   @include tablet {
-    padding-top: 65px;
+    padding-top: 60px;
     padding-bottom: 57px;
   }
 
@@ -32,6 +32,7 @@
     text-align: left;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 49px;
   }
 
   @include desktop {
@@ -92,6 +93,10 @@
 
 .contacts__item-property {
   margin-right: 30px;
+
+  @include tablet {
+    margin-right: 14px;
+  }
 }
 
 .contacts__item-value {
@@ -119,6 +124,11 @@
 .contacts__write {
   padding-left: (44 / 260 * 100%);
   padding-right: (44 / 260 * 100%);
+  
+  @include tablet {
+    width: 230px;
+    padding: 14px 37px;
+  }
 
   @include desktop {
     margin: 0;
@@ -132,7 +142,7 @@
     height: 457px;
   }
   @include tablet {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   @include desktop {

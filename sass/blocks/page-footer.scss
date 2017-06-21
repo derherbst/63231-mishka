@@ -17,6 +17,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
+    align-items: center;
   }
 }
 
@@ -37,6 +38,10 @@
   @include tablet {
     display: block;
     text-align: left;
+    
+    img {
+      width: 102px;
+    }
   }
 }
 
@@ -62,6 +67,7 @@
   font-size: 19px;
   line-height: 1.1;
   font-weight: 700;
+  justify-content: flex-end;
 }
 
 .page-footer__copyright-link {

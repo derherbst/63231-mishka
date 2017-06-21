@@ -7,11 +7,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     background: url(/img/review@1x.jpg) no-repeat;
-    background-size: contain;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 85px;
-    min-height: 435px; /*временно для сетки*/
+    padding: 76px 0 105px;
   }
 
   @include desktop {
@@ -24,6 +20,13 @@
   display: flex;
   flex-direction: column;
 
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
   @include desktop {
     padding-left: (100% / 6);
   }
@@ -41,6 +44,7 @@
     width: (298 / 768 * 100%);
     text-align: left;
     order: 1;
+    margin-bottom: 49px;
   }
 
   @include desktop {
@@ -49,11 +53,11 @@
   }
 }
 
-.reviews__slider-wrapper {
-
-@include tablet {
-  order: 3;
-}
+.reviews__slider‐wrapper {
+  @include tablet {
+    position: relative;
+    order: 3;
+  }
 }
 
 .reviews__text {
@@ -64,6 +68,7 @@
 
   @include tablet {
     line-height: 30px;
+    margin-bottom: 60px;
   }
 }
 
@@ -93,6 +98,8 @@
   border: 2px solid $greyDark;
   @include tablet {
     order: 2;
+    margin: 0;
+    padding: 14px 38px;
   }
 }
 
@@ -106,6 +113,11 @@
   @include tablet {
     text-align: right;
     margin-top: -25px;
+    width: 174px;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border: 0;
   }
 }
 
@@ -124,5 +136,11 @@
   &--next {
     background: url(/img/icon-right-arrow.svg) no-repeat;
     background-position: center;
+  }
+  
+  @include tablet {
+    &--prev {
+      border-right: 0;
+    }
   }
 }

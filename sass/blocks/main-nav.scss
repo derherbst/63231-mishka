@@ -150,17 +150,7 @@
   }
   @include tablet {
     font-size: 0;
-    width: 102px
-    button {
-      display: block;
-      width: 18px;
-      height: 19px;
-      border: none;
-      background: url(../img/icon-search.svg) left top no-repeat;
-      background-size: 18px 19px;
-      padding-left: 33px;
-      padding-right: 33px;
-    }
+    width: 102px;
     span {
       display: none;
     }

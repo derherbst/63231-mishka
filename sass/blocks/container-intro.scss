@@ -1,11 +1,12 @@
 .container-intro {
   border-top: $grey-border-thin;
+  background: url(../img/hero-mobile@1x.jpg) 50% 22% no-repeat;
+  background-size: cover;
 }
 
 .container-intro__bg-wrapper {
-  padding: 70px 30px 0px;
-  background: url(../img/hero-mobile@1x.jpg) 50% 22% no-repeat;
-  background-size: initial;
+  @include on-center();
+  padding: 70px 0px 0px;
   &--no-img {
     padding-top: 70px;
     padding-bottom: 75px;
@@ -15,8 +16,9 @@
 
   @include tablet {
     padding-top: 155px;
-    padding-bottom: 365px;
-    background-size: cover;
+    padding-bottom: 488px;
+    padding-left: 50px;
+    padding-right: 50px;
     &--no-img {
       padding-top: 101px;
       padding-bottom: 85px;
@@ -38,16 +40,21 @@
   color: $black;
   padding-left: 5%;
   padding-right: 5%;
-  &--index {
-    padding-bottom: 125px;
-  }
 
   @include tablet {
     font-size: 43px;
     line-height: 1.2;
+//    padding-left: (83 / 668 * 100%);
+//    padding-right: (83 / 668 * 100%);
   }
 
   @include desktop {
     font-size: 53px;
+  }
+}
+
+.container-intro__title--index {
+  br {
+    display: none;
   }
 }
