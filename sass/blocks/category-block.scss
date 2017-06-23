@@ -46,6 +46,11 @@
   @include tablet {
     padding-top: 28px;
   }
+  
+  @include desktop {
+    padding-left: (35 / 525 * 100%);
+    letter-spacing: 1px;
+  }
 }
 
 .category-block__item-name {

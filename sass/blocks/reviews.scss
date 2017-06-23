@@ -12,6 +12,8 @@
 
   @include desktop {
     @include on-center();
+    padding-top: 78px;
+    padding-bottom: 228px;
   }
 }
 
@@ -50,6 +52,7 @@
   @include desktop {
     font-size: 53px;
     line-height: 57px;
+    margin-top: -8px;
   }
 }
 
@@ -65,10 +68,22 @@
   text-align: left;
   line-height: 2;
   margin-bottom: 30px;
+  br {
+    display: none;
+  }
 
   @include tablet {
     line-height: 30px;
     margin-bottom: 60px;
+  }
+  
+  @include desktop {
+    font-size: 17px;
+    padding-right: (105 / 1050 * 100%);
+    margin-bottom: 40px;
+    br {
+      display: block;
+    }
   }
 }
 
@@ -86,6 +101,10 @@
   font-weight: 700;
   color: $black;
   margin-bottom: 9px;
+  
+  @include desktop {
+    margin-bottom: 11px;
+  }
 }
 
 .reviews__auhor‐nick {

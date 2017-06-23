@@ -48,8 +48,13 @@
   }
 
   @include desktop {
-    width: 23%;
     order: 2;
+    flex: 1 auto;
+    padding-left: 34px;
+    img {
+      padding-top: 27px;
+      width: 102px;
+    }
   }
 }
 
@@ -155,6 +160,10 @@
       display: none;
     }
   }
+  
+  @include desktop {
+    flex: 1 0 25%;
+  }
 }
 
 .main-nav__cart {
@@ -178,6 +187,15 @@
     width: 326px;
     a {
       padding: 31px 0 37px 82px;
+    }
+  }
+  
+  @include desktop {
+    flex: 1 0 79%;
+    a {
+      text-align: right;
+      padding-top: 33px;
+      padding-left: 74px;
     }
   }
 }
@@ -221,8 +239,24 @@
   }
 
   @include desktop {
+    padding-top: 34px;
+    font-size: 17px;
+    &:first-child {
+      position: relative;
+      &::after {
+        content: " ";
+        position: absolute;
+        right: 36px;
+        top: 0px;
+        width: 1px;
+        height: 88px;
+        background-color: $greyLight;
+      }
+    }
     &--mobile-hidden {
       display: block;
+      padding-top: 56px;
+      font-size: 15px;
     }
   }
 }
@@ -242,7 +276,7 @@
   @include desktop {
     position: absolute;
     right: 0;
-    bottom: 25px;
+    bottom: 0;
     order: 4;
   }
 }
