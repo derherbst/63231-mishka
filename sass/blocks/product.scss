@@ -108,7 +108,7 @@
     margin: 0;
     font-size: 17px;
     line-height: 1.8;
-    margin-bottom: 45px;
+    margin-bottom: 36px;
   }
 }
 
@@ -157,7 +157,7 @@
 }
 
 .product__image {
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 
   @include tablet {
     position: absolute;
@@ -184,7 +184,7 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 
   @include tablet {
     font-size: 20px;

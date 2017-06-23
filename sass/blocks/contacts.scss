@@ -144,6 +144,9 @@
   img {
     height: 457px;
   }
+  &--on-desktop {
+    display: none;
+  }
   @include tablet {
     margin-bottom: 52px;
   }

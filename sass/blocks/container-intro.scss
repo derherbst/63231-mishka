@@ -10,7 +10,7 @@
 
 .container-intro__bg-wrapper {
   @include on-center();
-  padding: 70px 0px 0px;
+  padding: 70px 0px 125px;
   &--no-img {
     padding-top: 70px;
     padding-bottom: 77px;
@@ -24,7 +24,7 @@
     padding-left: 50px;
     padding-right: 50px;
     &--no-img {
-      padding-top: 101px;
+      padding-top: 93px;
       padding-bottom: 85px;
     }
   }
